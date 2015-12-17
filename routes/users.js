@@ -30,7 +30,7 @@ router.post('/reg', function (req, res) {
       req.flash('error',err);
       return res.redirect('/users/reg');
     }
-    console.log(user);
+
     req.session.user = user;//用户信息存入 session
     res.redirect('/');//注册成功后返回主页
   });

@@ -11,6 +11,7 @@ module.exports = {
         user:{type:ObjectId,ref:'User'}, //用户
         title: String, //标题
         content: String, //内容
+
         createAt:{type: Date, default: Date.now} //创建时间
     }
 }

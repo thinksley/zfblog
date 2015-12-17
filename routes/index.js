@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res) {
   console.log(req.session.user)
   Model('Article').find({}).populate('user').exec(function(err,article){
-    res.render('index', {title: 'ึ๗าณ',articles:article});
+    res.render('index', {title: 'home',articles:article});
   });
 });
 
